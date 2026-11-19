@@ -38,7 +38,6 @@ def parse_android_ver(ver_str):
         try: return float(match.group(1))
         except: return np.nan
     return np.nan
-
 def load_dual_axis_data():
     if not os.path.exists(DATA_PATH):
         return None
