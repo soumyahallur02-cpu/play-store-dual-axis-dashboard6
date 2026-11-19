@@ -99,7 +99,6 @@ def load_dual_axis_data():
         chart_data['paid_revenue'].append(round(paid_row['avg_revenue'].values[0], 2) if not paid_row.empty else 0)
         
     return chart_data
-
 @app.route('/')
 def index():
     return render_template('index.html')
