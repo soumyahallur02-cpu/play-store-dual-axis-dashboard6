@@ -7,7 +7,6 @@ import pytz
 import os
 
 app = Flask(__name__)
-
 DATA_PATH = os.path.join(os.path.dirname(__file__), 'data', 'Play Store Data_3.csv')
 
 def parse_size_mb(size_str):
