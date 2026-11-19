@@ -20,7 +20,6 @@ def parse_size_mb(size_str):
         except: return np.nan
     try: return float(s)
     except: return np.nan
-
 def parse_installs(inst_str):
     if pd.isna(inst_str): return np.nan
     s = str(inst_str).replace('+', '').replace(',', '').strip()
