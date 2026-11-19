@@ -30,7 +30,6 @@ def parse_price(price_str):
     s = str(price_str).replace('$', '').strip()
     try: return float(s)
     except: return 0.0
-
 def parse_android_ver(ver_str):
     if pd.isna(ver_str) or str(ver_str).strip() == 'Varies with device':
         return np.nan
