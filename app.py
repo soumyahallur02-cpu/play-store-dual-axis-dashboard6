@@ -9,7 +9,7 @@ app = Flask(__name__)
 DATA_PATH = os.path.join(os.path.dirname(__file__), 'data', 'Play Store Data_3.csv')
 def parse_size_mb(size_str):
     if pd.isna(size_str) or str(size_str).strip() == 'Varies with device':
-        return np.nan
+     return np.nan
     s = str(size_str).strip()
     if s.endswith('M') or s.endswith('m'):
         try: return float(s[:-1])
