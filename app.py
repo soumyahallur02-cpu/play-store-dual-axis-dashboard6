@@ -114,6 +114,5 @@ def dual_axis_data():
         'is_active': is_active,
         'data': data
     })
-
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
