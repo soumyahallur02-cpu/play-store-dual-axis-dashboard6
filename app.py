@@ -25,7 +25,6 @@ def parse_installs(inst_str):
     s = str(inst_str).replace('+', '').replace(',', '').strip()
     try: return float(s)
     except: return np.nan
-
 def parse_price(price_str):
     if pd.isna(price_str): return 0.0
     s = str(price_str).replace('$', '').strip()
