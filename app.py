@@ -102,7 +102,6 @@ def load_dual_axis_data():
 @app.route('/')
 def index():
     return render_template('index.html')
-
 @app.route('/api/dual-axis-data')
 def dual_axis_data():
     tz = pytz.timezone('Asia/Kolkata')
